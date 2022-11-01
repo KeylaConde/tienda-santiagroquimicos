@@ -1,6 +1,8 @@
 :root {
-    --green: #168645;
+    --green: #2f7e01;
     --brown: rgb(148, 91, 48);
+    --white: white;
+    --black: rgba(7, 1, 1, 0.877);
 }
 * {
     box-sizing: border-box;
@@ -13,11 +15,16 @@ html {
 body{
     font-size: 1.6rem;
 }
+
+/* Navbar */
 nav {
     display: flex;
     justify-content: space-between;
     padding: 0 2.4rem;
     border-bottom: 1px solid var(--green);
+}
+.menu {
+    display: none;
 }
 .logo {
     width: 300px;
@@ -43,4 +50,55 @@ nav {
 .navbar-left ul li a:hover {
     border: 1px solid var(--brown);
     color: var(--brown);
+}
+
+/* Menú en mobile */
+.mobile-menu {
+    background-color: var(--white);
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    width: 100%;
+    padding: 2.4rem;
+}
+.mobile-menu a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+}
+.mobile-menu ul {
+    margin: 2.4rem 0 0;
+    list-style: none;
+}
+.mobile-menu ul:nth-child(1) {
+    border-bottom: 1px solid var(--green);
+}
+.mobile-menu ul li {
+    margin-bottom: 2.4rem;
+}
+ul li .email {
+    font-size: 1.4rem;
+    font-weight: lighter;
+}
+ul li .sign-out {
+    font-size: 1.4rem;
+    color: var(--green);
+}
+
+@media (max-width: 640px) {
+    .menu {
+        display: block;
+    }
+    .navbar-left ul {
+        display: none;
+    }
+    .navbar-email {
+        display: none;
+    }
+}
+
+@media (min-width: 641px) {
+    .mobile-menu {
+        display: none;
+    }
 }
