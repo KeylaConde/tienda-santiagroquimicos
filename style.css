@@ -35,7 +35,7 @@ nav {
     display: none;
 }
 .logo {
-    width: 300px;
+    width: 30rem;
 }
 .navbar-left {
     display: flex;
@@ -121,7 +121,7 @@ ul li .email {
 }
 ul li .sign-out {
     font-size: 1.4rem;
-    color: var(--green);
+    color: var(--red);
 }
 
 /* desktop-menu*/
@@ -237,6 +237,79 @@ aside {
     height: 5rem;
     cursor: pointer;
 }
+/* Product detail*/
+.product-detail-close {
+    background: var(--gray);
+    width: 1.4rem;
+    height: 1.4rem;
+    top: 30px;
+    left: 24px;
+    z-index: 2;
+    padding: ;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+}
+.product-detail-close:hover {
+    cursor: pointer;
+}
+#productDetail > img:nth-child(2) {
+    width: 20rem;
+    height: 36rem;
+    object-fit: cover;
+    border-radius: 0 0 20px 20px;
+    justify-content: center;
+    padding: 2.5rem;
+}
+#productDetail .product-info {
+    margin: 24px 24px 0 24px;;
+}
+#productDetail .product-info p:nth-child(1) {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+#productDetail .product-info p:nth-child(2) {
+    color: var(--gray);
+    margin-bottom: 3.6rem;
+}
+#productDetail .product-info p:nth-child(3) {
+    color: var(--gray);
+    margin-bottom: 3.6rem;
+}
+.add-to-cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Product List */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 24rem);
+    gap: 2.6rem;
+    place-content: center;
+    margin-top: 2rem;
+}
+.product-card {
+    width: 24rem;
+}
+.product-card img {
+    width: 24rem;
+    height: 24rem;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.product-card .product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+.product-card .product-info figure img {
+    width: 35px;
+    height: 35px;
+}
 
 @media (max-width: 640px) {
     .menu {
@@ -247,6 +320,19 @@ aside {
     }
     .navbar-email {
         display: none;
+    }
+    .product-detail {
+        width: 100%;
+    }
+    .cards-container {
+        grid-template-columns: repeat(auto-fill, 140px);
+    }
+    .product-card {
+        width: 14rem;
+    }
+    .product-card img {
+        width: 14rem;
+        height: 14rem;
     }
 }
 
