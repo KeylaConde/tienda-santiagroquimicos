@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./style.css">
     <title>ícono</title>
     <link rel="icon" type="img/jpg" href="./santiagroquimicosletras.jpg">
+    
+    <script src="https://kit.fontawesome.com/41db09a670.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
@@ -29,7 +31,7 @@
                 <li class="navbar-email">keylacondesa@gmail.com</li>
                 <li class="navbar-shopping-cart">
                     <img src="./icons/icon_shopping_cart.svg" alt="shopping cart">
-                    <div>7</div>
+                    <div>3</div>
                 </li>
             </ul>
         </div>
@@ -53,7 +55,7 @@
             </ul>
             <ul>
                 <li><a href="|">Mis órdenes</a></li>
-                <li><a href="|">Mi cuenta</a></li>
+                <li class="my-account"><a href="|">Mi cuenta</a></li>
             </ul>
             <ul>
                 <li><a href="|" class="email">keylacondesa@gmail.com</a></li>
@@ -104,12 +106,13 @@
             <button class="primary-button">Verificar</button>
         </div>
     </aside>
-        
+       
     <aside id="productDetail" class="inactive">
         <div class="product-detail-close">
             <img src="./icons/icon_close.png" alt="close">
         </div>
         <img src="./images/colageno-hidrolizado.webp" alt="colágeno hidrolizado">
+        
         <div class="product-info">
             <p>$23.000</p>
             <p>Colágeno hidrolizado Biopronat 700 gr.</p>
@@ -121,9 +124,63 @@
         </div>
     </aside>
 
+   
+    <main>
     <section class="main-container">
-        <div class="cards-container"></div>
+        
+        <div class="cards-container">
+        </div>
     </section>
+
+    <div class="login">
+        <div class="form-container">
+            <form action="/" class="form">
+                <label for="email" class="label">Correo electrónico</label>
+                <input type="text" id="email" placeholder="*******@example.com" class="input input-email">
+
+                <label for="password" class="label">Contraseña</label>
+                <input type="password" placeholder="**********" class="input">
+
+                <input type="submit" value="Log in" class="primary-button login-button">
+                <a href="/">Olvidé mi contraseña</a>
+            </form>
+            <button class="secundary-button signup-button">Ingresar</button>
+        </div>
+    </div>
+</main>
+
+    <footer class="page-footer">
+        
+
+        <!--div class="information"-->
+        <div class="info-1">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="./santiagroquimicosletras.jpg" alt="logo de santiagroquímicos">
+                        </a>
+                    </figure>
+                </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <P>SOMOS EL PUNTO NATURAL DONDE TU SALUD ES LO MAS IMPORTANTE PARA NOSOTROS.</P>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque debitis a, possimus porro omnis nesciunt minima eaque impedit aperiam deleniti, ex consequatur molestiae ipsa repellat adipisci asperiores tempore eligendi ut.</p>
+            </div>
+            <div class="box">
+                <h2>SÍGUENOS</h2>
+                <div class="social-network">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-whatsapp"></a>
+                </div>
+            </div>
+        </div>
+        <div class="info-2">
+            <small>&copy; 2022 <b>Santiagroquimicos</b> - Todos los derechos reservados.</small>
+        </div>
+    </footer>
 
     <script src="./santi.js"></script>
 </body>

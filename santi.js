@@ -9,10 +9,12 @@ const productDetailContainer = document.querySelector('#productDetail');
 const cardsContainer = document.querySelector('.cards-container');
 
 
+
 menuHamburger.addEventListener('click', toggleMobileMenu);
 menuEmail.addEventListener('click', toggleDesktopMenu);
 menuCartIcon.addEventListener('click', toggleCarritoAside);
 productDetailConstIcon.addEventListener('click', closeProductDetailAside);
+
 
 function toggleDesktopMenu() {
     const isAsideClosed = shoppingCartContainer.classList.contains('inactive');
@@ -93,6 +95,7 @@ productList.push({
     price:  30000,
     image: 'https://mipuntogpasto.com.co/wp-content/uploads/2021/07/vitafer-l.png',
 });
+
 
 function renderProducts(arr) {
     for (product of arr) {
